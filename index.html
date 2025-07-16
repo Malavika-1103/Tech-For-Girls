@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech For Girls Registration 🚀</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Tech For Girls Registration</h1>
+    <form id="registrationForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="email" id="email" placeholder="Email ID" required />
+      <input type="text" id="college" placeholder="College / Department" required />
+
+      <div class="share-section">
+        <button type="button" id="shareBtn">Share on WhatsApp</button>
+        <p id="clickCounter">Click count: 0/5</p>
+      </div>
+
+      <label>Upload Screenshot:</label>
+      <input type="file" id="screenshot" accept="image/*" required />
+
+      <button type="submit" id="submitBtn">Submit Registration</button>
+    </form>
+
+    <p id="responseMsg"></p>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
